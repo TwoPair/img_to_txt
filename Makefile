@@ -9,7 +9,7 @@ SDIR = ./src
 ifeq ($(config), debug)
     CFLAGS = -I $(IDIR) -g -D DEBUG_CONFIG_SET $(ALL_WARNINGS_ARE_ERRORS)
 else
-	CFLAGS = -I $(IDIR) -g -O3
+	CFLAGS = -I $(IDIR) -O3
 endif
 
 ODIR=obj
